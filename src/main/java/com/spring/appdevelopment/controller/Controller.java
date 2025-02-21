@@ -7,10 +7,7 @@
 //- A quick way to jumpstart ones learning
 package com.spring.appdevelopment.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
@@ -29,6 +26,11 @@ public class Controller {
     @ResponseBody
     public String hello() {
         return "Hello, welcome to Spring Boot!";
+    }
+
+    @PutMapping("/hello")
+    public String putHello(){
+        return "Hello from BridgeLabz";
     }
 
 
