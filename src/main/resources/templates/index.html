@@ -29,7 +29,7 @@
     }
 
     function fetchBridgeLab() {
-        fetch('/web/hello')
+        fetch('/hello')
             .then(response => response.text())
             .then(data => document.getElementById('bridgeLabMessage').innerText = data)
             .catch(error => console.error('Error:', error));
